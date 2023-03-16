@@ -1,0 +1,169 @@
+*{
+    margin:0;
+    padding:0;
+}
+
+body{
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 16px;
+    overflow-x: hidden;
+}
+
+.image-box{
+    width:100vw;
+}
+
+.image-box img{
+    width:100%;
+}
+
+.image-section{
+   visibility: hidden;
+}
+
+.bg-section{
+    background-image: none;
+}
+
+.text-section{
+    margin:20px auto;
+}
+
+.logo{
+    margin:20px;
+    padding:12px;
+}
+
+.logo img{
+    width:100px;
+}
+
+.text-box{
+    margin:20px auto;
+    padding:10px 15px;
+    width:90%;
+    text-align:center;
+}
+
+.text-box .heading{
+    font-size:2.7em;
+    font-weight: 600;
+    letter-spacing: 8px;
+    text-transform:uppercase;
+    padding:10px 15px;
+    margin:0 auto;
+    text-align: center;
+    width:150px;
+}
+
+.heading span{
+    color:hsl(0, 36%, 70%);
+    font-weight: 300;
+}
+
+.basic-text{
+    line-height: 28px;
+    color: hsl(0, 36%, 70%);
+    padding:20px;
+}
+
+.login-form{
+    position:relative;
+}
+
+.form-values input{
+    width:300px;
+    border-radius:30px;
+    border: 1px solid gray;
+    padding:15px 20px;
+}
+
+.form-values button{
+    position:absolute;
+    right:50px;
+    top:0;
+    bottom:12px;
+    width:80px;
+    height:45px;
+    border:none;
+    border-radius:30px;
+    cursor:pointer;
+    background-color:hsl(0, 93%, 68%);
+}
+
+.form-values img{
+  right:30px;
+  top:12px;
+  position:absolute;
+}
+
+/* span img{
+    margin-top:8px;
+} */
+
+.error-message{
+    color:red;
+    visibility: hidden;
+}
+
+.error-message-02{
+    visibility: visible;
+}
+
+.error-message img{
+    width:15px;
+    margin-top:10px;
+}
+
+@media (min-width:765px){
+    .appareal-section{
+        display: flex;
+    }
+
+    .image-box{
+        display:none;
+    }
+    
+    .image-section{
+        width:45vw;
+        height:100%;
+        visibility: visible;
+    }
+
+    .image-section img{
+        width:100%;
+    }
+
+    .bg-section{
+        background-image: url(./images/bg-pattern-desktop.svg);
+        background-size: cover;
+    }
+
+    .text-section{
+        width:55vw;
+        margin:25px 30px;
+        padding:20px 35px;
+    }
+
+    .text-box{
+       text-align:start;
+       width:400px;
+       padding:0;
+       margin:0;
+    }
+
+    .text-box .heading{
+        text-align: start;
+        width: 200px;
+        margin-left:20px;
+        padding-left:12px;
+    }
+
+    .basic-text{
+        margin-left:20px;
+    }
+
+    .login-form{
+        margin-left:30px;
+    }
+}
